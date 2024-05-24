@@ -37,7 +37,14 @@ class NumberGuessingGameplay{
         NumToGuess = RandomNumberGenerator();
         int UserGuess;
         cout << "LETS BEGIN THE GAME: " << endl;
-        cout << "GUESS A NUMBER" << endl;
+        cout << "GUESS A NUMBER BETWEEN";
+        if (choice == 1){
+            cout << " 0 AND 10:" << endl;
+        }else if(choice == 2){
+            cout << " 0 AND 100" << endl;
+        }else{
+            cout << " 0 and 1000" << endl;
+        }
         while(1){
             cin >> UserGuess;
             turns++;
